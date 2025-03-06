@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:nike_sneaker_store/firstscreen.dart';
+import 'package:nike_sneaker_store/OnBoardingPage.dart';
+// import 'package:nike_sneaker_store/firstscreen.dart';
 
 class NikeScreen extends StatefulWidget {
   const NikeScreen({super.key});
@@ -16,7 +17,7 @@ class _NikeScreenState extends State<NikeScreen> {
     super.initState();
     // Navigate to HomeScreen after 3 seconds
     Timer(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyFirstScreen(),));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => OnboardingScreen(),));
     });
   }
   Widget build(BuildContext context) {
